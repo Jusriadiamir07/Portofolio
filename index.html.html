@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | JusriadiAmir</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Jujusmart07<span class="brand-accent"></span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-item active" data-section="hero">Beranda</a></li>
+      <li><a href="#about" class="nav-item" data-section="about">Tentang</a></li>
+      <li><a href="#skills" class="nav-item" data-section="skills">Keahlian</a></li>
+      <li><a href="#portfolio" class="nav-item" data-section="portfolio">Portofolio</a></li>
+      <li><a href="#services" class="nav-item" data-section="services">Layanan</a></li>
+      <li><a href="#contact" class="nav-item" data-section="contact">Kontak</a></li>
+      <button id="darkToggle" class="nav-cta">🌙</button>
+    </ul>
+
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Hubungi Saya
+    </button>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="#about" onclick="closeMenu()">Tentang</a></li>
+      <li><a href="#skills" onclick="closeMenu()">Keahlian</a></li>
+      <li><a href="#portfolio" onclick="closeMenu()">Portofolio</a></li>
+      <li><a href="#services" onclick="closeMenu()">Layanan</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Kontak</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section class="hero" id="hero">
+      <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> 
+        </div>
+        <h1 class="hero-title">
+          Halo, Saya<br/>
+          <span class="highlight-name">Jusriadiamir</span>
+        </h1>
+        <p class="hero-sub">Mahasiswa Sistem Teknologi Informasi &amp; Web Developer</p>
+        <p class="hero-desc">
+          Saya membangun pengalaman digital yang tidak hanya berfungsi dengan baik,
+          tetapi juga terlihat luar biasa. Passionate di bidang teknologi dan desain UI/UX.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn-primary">
+            Tentang saya <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-ghost">Kontak Saya</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Proyek</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Tahun Belajar</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">5★</span><span class="stat-label">Rating</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <div class="photo-ring ring-1"></div>
+          <div class="photo-ring ring-2"></div>
+          <div class="photo-placeholder">
+          <img src="assets/foto-profil.jpg" alt="Foto Profil Saya" 
+             style="width:280%;height:280%;object-fit:cover;">
+        </div>
+          </div>
+          <div class="photo-badge-tech">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ TENTANG ═══════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">— Tentang Saya</div>
+      <h2 class="section-title">Kenali Saya <span class="text-green">Lebih Dekat</span></h2>
+
+      <div class="about-grid">
+        <div class="about-image-wrap">
+            <div class="about-photo" style="padding:0;overflow:hidden;border-radius:24px;">
+            <img src="assets/foto.jpg" alt="Foto Saya" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="about-tag tag-1"><i class="fa-solid fa-laptop-code"></i> Coder</div>
+          <div class="about-tag tag-2"><i class="fa-solid fa-graduation-cap"></i> Mahasiswa</div>
+        </div>
+
+        <div class="about-text">
+          <p class="about-lead">
+            Saya adalah mahasiswa Aktif Jurusan Sistem Teknologi Informasi semester 4 di Institut Teknologi Dan Bisnis Nobel Indonesia,
+            dengan ketertarikan kuat di bidang pengembangan web dan teknologi digital.
+          </p>
+          <p>
+            Sejak pertama mengenal dunia pemrograman, saya tidak pernah berhenti belajar.
+            Saya percaya bahwa kode yang baik bukan hanya yang berjalan, tapi yang elegan,
+            efisien, dan berdampak nyata bagi pengguna.
+          </p>
+
+          <div class="edu-cards">
+            <div class="edu-card">
+              <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+              <div>
+                <strong>SMK SMK 1 BULUKUMBA</strong>
+                <span>Lulus 2024</span>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+              <div>
+                <strong>INSTITUT TEKNOLOGI DAN BISNIS NOBEL INDONESIA</strong>
+                <span>Teknik Sistem Teknologi Informasi · 2024 – Sekarang</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="interest-tags">
+            <span>🌐 Web Development</span>
+            <span>🎨 UI/UX Design</span>
+            <span>📱 Mobile App</span>
+            <span>🤖 AI & Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ KEAHLIAN ═══════════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">— Keahlian</div>
+      <h2 class="section-title">Kemampuan <span class="text-green">Teknis Saya</span></h2>
+
+      <div class="skills-layout">
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-code"></i> Mata Kuliah Dikuasai</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Financial technology</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Internet of things</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>pengembangan web</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>KomunikasiJaringan Komputer</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>sistem pendukung keputusan</span><span>78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="--w:78%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-layer-group"></i> Teknologi & Tools</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+            <div class="tech-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="tech-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="tech-card"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+            <div class="tech-card"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+            <div class="tech-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="tech-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+            <div class="tech-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+            <div class="tech-card"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PORTOFOLIO ═══════════════════════════════ -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-label">— Portofolio</div>
+      <h2 class="section-title">Proyek & <span class="text-green">Kesibukan Saya</span></h2>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card featured">
+          <div class="portfolio-img">
+            <div class="portfolio-img-placeholder"><i class="fa-solid fa-globe"></i></div>
+            <div class="portfolio-overlay">
+              <a href="#" class="overlay-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <span class="portfolio-badge">Featured</span>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Mahasiswa Aktif</h3>
+            <p>menjalani perkuliah seperti biasanya senin - kamis.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <div class="portfolio-img-placeholder"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div class="portfolio-overlay">
+              <a href="#" class="overlay-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags"><span>PHP</span><span>MySQL</span></div>
+            <h3>pembuatan Website</h3>
+            <p>Menemerima Jasa Pembuatan semua jenis Website.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <div class="portfolio-img-placeholder"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="portfolio-overlay">
+              <a href="#" class="overlay-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags"><span>Python</span><span>Data</span></div>
+            <h3>desaian grafis</h3>
+            <p>menerima jasa membuat berbagai desain grafis baik poster, baliho, logo dan lain sebagainya.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <div class="portfolio-img-placeholder"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="portfolio-overlay">
+              <a href="#" class="overlay-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-tags"><span>JavaScript</span><span>Canvas</span></div>
+            <h3>affilte tiktok</h3>
+            <p>aktif sebagai konter kreator tiktok yang menawarkan prodak jualan di platform tiktok.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ LAYANAN ═══════════════════════════════ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-label">— Layanan</div>
+      <h2 class="section-title">Jasa yang <span class="text-green">Saya Tawarkan</span></h2>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Pembuatan Website</h3>
+          <p>Membuat website personal, portofolio, landing page, atau company profile yang modern dan responsif sesuai kebutuhan klien.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Desain Custom</li>
+            <li><i class="fa-solid fa-check"></i> Responsif Mobile</li>
+            <li><i class="fa-solid fa-check"></i> SEO Friendly</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured-service">
+          <div class="service-badge">Populer</div>
+          <div class="service-icon"><i class="fa-solid fa-paint-brush"></i></div>
+          <h3>Desain UI/UX</h3>
+          <p>Merancang tampilan antarmuka yang menarik dan user-friendly menggunakan Figma untuk kebutuhan aplikasi atau website.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Wireframe & Prototype</li>
+            <li><i class="fa-solid fa-check"></i> Style Guide</li>
+            <li><i class="fa-solid fa-check"></i> Revisi 3x</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Manajemen Database</h3>
+          <p>Merancang struktur database, query optimization, serta pembuatan sistem CRUD berbasis PHP dan MySQL.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> ERD & Normalisasi</li>
+            <li><i class="fa-solid fa-check"></i> CRUD System</li>
+            <li><i class="fa-solid fa-check"></i> Laporan Data</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+          <h3>Les / Tutoring IT</h3>
+          <p>Memberikan bimbingan belajar pemrograman untuk pelajar dan mahasiswa, baik tatap muka maupun online via Zoom/Google Meet.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> HTML, CSS, JS</li>
+            <li><i class="fa-solid fa-check"></i> Python & PHP</li>
+            <li><i class="fa-solid fa-check"></i> Jadwal Fleksibel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ KONTAK ═══════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">— Kontak</div>
+      <h2 class="section-title">Mari <span class="text-green">Terhubung</span></h2>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p class="contact-lead">
+            Punya proyek menarik atau ingin berkolaborasi? Saya siap membantu.
+            Hubungi saya melalui WhatsApp atau media sosial di bawah ini.
+          </p>
+
+          <div class="contact-cards">
+            <a href="https://wa.me/6282223141940" target="_blank" class="contact-card wa-card">
+              <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+62 82223141940</span>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://instagram.com/username_kamu" target="_blank" class="contact-card ig-card">
+              <div class="contact-card-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div>
+                <strong>Instagram</strong>
+                <span>jusriadiamir9</span>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="https://github.com/username_kamu" target="_blank" class="contact-card gh-card">
+              <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/jusriadiamir09</span>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+
+            <a href="mailto:email@kamu.com" class="contact-card em-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>jusriadiamir09@gmail.com</span>
+              </div>
+              <i class="fa-solid fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <h3>Kirim Pesan</h3>
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama kamu"/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@contoh.com"/>
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea rows="4" placeholder="Ceritakan proyekmu..."></textarea>
+          </div>
+          <button class="btn-primary full-width" onclick="sendWA()">
+            <i class="fa-brands fa-whatsapp"></i> Kirim via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-text">Jujusmart07<span class="brand-accent">.</span></span>
+        <p>Membangun pengalaman digital yang bermakna, satu baris kode dalam satu waktu.</p>
+      </div>
+      <div class="footer-nav">
+        <strong>Navigasi</strong>
+        <a href="#hero">Beranda</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="footer-social">
+        <strong>Sosial Media</strong>
+        <div class="social-icons">
+          <a href="https://wa.me/628XXXXXXXXXX" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com/username_kamu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/username_kamu" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/username_kamu" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <strong>JUSRIADIAMIR</strong>. Hak Cipta Dilindungi Undang-Undang.</p>
+      <p>Dibuat dengan <span class="heart">♥</span> menggunakan HTML & CSS</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
